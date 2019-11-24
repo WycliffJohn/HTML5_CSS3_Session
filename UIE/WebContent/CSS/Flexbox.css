@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 2px;
+}
+
+body {
+	font-size: 24px;
+	color: white;
+	
+	text-align: center;
+	flex-direction: column;
+}
+
+.flex-header {
+	background-color: #0080ff;
+	padding:40px;
+}
+
+.flex-main {
+	display: flex;
+	flex: 1;
+}
+
+.flex-nav {
+	background-color: #B95F21;
+	padding: 30px;
+	flex: 1 1 5rem;
+}
+
+.flex-article {
+	background-color: #81A43C;
+	padding: 30px;
+	flex: 3 3;
+}
+
+.flex-aside {
+	background-color: #895F21;
+	padding: 30px;
+	flex: 1 1 5rem;
+}
+
+.flex-footer {
+	background-color: #0080ff;
+	padding:40px;
+}
+
+@media all and (max-width:540px) {
+	.flex-main {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,93 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #695d5d61;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 100%:
+}
+
+h2 {
+	text-align: center;
+	font-size: 50px;
+	color: #000000;
+}
+
+form {
+	margin: 20px auto;
+	width: 375px;
+	color: steelblue;
+}
+
+input {
+	padding: 10px;
+	font-size: inherit;
+}
+
+input[type="text"] {
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelbird;
+}
+
+input[type="password"] {
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelbird;
+}
+
+input[type="email"] {
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelbird;
+}
+
+input[type="url"] {
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelbird;
+}
+
+input[type="search"] {
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelbird;
+}
+
+input[type="date"] {
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelbird;
+}
+
+input[type="tel"] {
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelbird;
+}
+
+input[type="number"] {
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelbird;
+}
+
+input[type="password"] {
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelbird;
+}
+
+input[type="submit"] {
+	
+}

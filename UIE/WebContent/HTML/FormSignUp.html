@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../CSS/SignUp.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<section>
+
+
+
+		<h2>SIGN UP HERE</h2>
+
+		<form class="wrap">
+			<input type="text" placeholder="FirstName..."
+				autocomplete="on" autofocus required Id="FirstName"><br> 
+				<input type="text"
+				placeholder="MiddleName..."  Id="MiddleName" required><br> 
+				<input
+				type="text" placeholder="LastName..."  Id="LastName" required><br>
+			<div>
+				<input type="radio" name="name"><span style="color: Black" Id="Gender">Male</span>
+				<input type="radio" name="name"><span style="color: Black" Id="Gender">Female</span>
+			</div>
+			<br> <input type="number" placeholder="Enter Your Age.." min="0"
+				max="100" step="1" Id="Age" required>
+			<!-- value is for default -->
+			<br>
+			<!-- slIder <input type="range"  placeholder="Enter Your Age.." min="0" max="100" step="10" required> -->
+			<input type="tel" placeholder="Enter Your Mobile Number.."
+				pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" Id="Mobile No" required><br> 
+				<input
+				type="date" placeholder="DOB" Id="DOB" required><br> 
+				<input type="email"
+				placeholder="Email..."  Id="Email" required><br> 
+				<input type="text"
+				placeholder="UserName..."  Id="UserName" required><br> 
+				<input
+				type="password" placeholder="Password..."  size="8"
+				maxlength="8" required><br> 
+				<input type="url" placeholder="URL" Id="URL" required><br>
+			<!--  <input type="search" placeholder="Search Item">-->
+			<div>
+				<input type="submit" value="Submit" onclick=dispalyMessage()> 
+				<input type="Reset"
+					value="Reset">
+					<input type="submit"
+					value="ViewData" onclick=dispalyUserDetails()><br>
+			</div>
+			<!-- <label>Progress</label>
+			<progress value="50" max="100">50%</progress>
+ -->
+
+
+		</form>
+
+	</section>
+	
+	<script type="text/javascript">
+	
+	function dispalyMessage() {
+		alert("Thanks for Signing up")	
+		var FirstName1=document.getElementById("FirstName").value;
+		var MiddleName1=document.getElementById("MiddleName").value;
+		/*var LastName1=document.getElementById("LastName").value;*/
+		var LastName1=document.getElementById("LastName").value;
+			var Gender1=document.getElementById("Gender").value;
+				var Age1=document.getElementById("Age").value;
+				/* 	var Mobile No1=document.getElementById('MobileNo').value; */
+						var DOB1=document.getElementById("DOB").value;
+							var Email1=document.getElementById("Email").value;
+								var UserName1=document.getElementById("UserName").value;
+									var URL1=document.getElementById("URL").value;
+		
+		var details={
+				FirstName:FirstName1,
+				MiddleName:MiddleName1,
+				LastName:LastName1,
+				Gender:Gender1,
+				Age:Age1,
+				DOB:DOB1,
+				Email:Email1,
+				UserName:UserName1,
+				URL:URL1
+		}
+		
+		
+		
+	localStorage.setItem('items',JSON.stringify(details));
+	}
+	
+	function dispalyUserDetails() {
+		
+		
+		
+		localStorage.getItem('items');
+	
+		var Details=(localStorage.getItem('items'));
+		document.write(Details);
+	}
+	</script>
+</body>
+</html>
+
+<!-- Date pickers
+1.date
+2.datetime
+3.datetime-local
+4.month
+5.time
+6.week
+ -->

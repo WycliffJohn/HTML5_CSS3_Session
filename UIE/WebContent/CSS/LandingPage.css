@@ -1,0 +1,213 @@
+@charset "ISO-8859-1";
+
+/*Header starts here*/
+.col-3 {
+	width: 33%;
+	float: left;
+}
+
+/*Header properties*/
+header {
+	height: 70px;
+	background-color: gray;
+}
+
+/*body prop*/
+body {
+	background-color: white;
+	margin: 0; /*margin right left top gaps removal*/
+}
+
+p {
+	color: #5d6660;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+#header-container {
+	width: 75%;
+	margin: auto; /*R L = margin*/
+}
+
+.menu li {
+	list-style-type: none;
+	display: inline; /*change block to inline*/
+	font-size: .85em;
+	color: #8e8e8e;
+}
+
+.getstarted {
+	background-color: green;
+	border-radius: 28px;
+	-moz-border-radius: 28px;
+	-webkit-border-radius: 28px;
+	text-decoration: none;
+	color: #000000;
+	padding: 15px 20px;
+	display: inline;
+	font-size: 18px;
+	float: right;
+	margin-top: 10px;
+}
+
+.menu {
+	margin-top: 32px;
+}
+
+/*Header ends here*/
+
+/*main*/
+#feature-section {
+	padding-top: 10px;
+}
+
+.title {
+	width: 50%;
+	text-align: center;
+	font-weight: 200;
+	line-height: 1.5em;
+	margin: auto;
+	font-family: 'Sofia', cursive; /*CUSTOM FONTS*/
+}
+
+#top-section-main {
+	background-image: url("C:/Users/701558/Desktop/wow1.jfif");
+	background-repeat: no-repeat;
+	height: 1000px;
+	border: none;
+	repeat: no-repeat;
+}
+
+#top-section-container {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+
+#top-section-container h1 {
+	font-size: 4em;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+}
+
+.featurecontent {
+	margin: auto;
+	width: 80%;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.featurecontent  .col-3 img {
+	width: 100%;
+}
+
+.featurecontent  .col-3 p {
+	font-size: 0.9em;
+	letter-spacing: 1px;
+}
+
+.featurecontent  .col-3 {
+	padding: 10px;
+	width: 30%;
+}
+
+.showcase-container {
+	background-color: #f6f8fa;
+	width: 100%;
+}
+
+.video {
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.textalign {
+	padding-top: 40px;
+}
+
+.col-2 {
+	float: left;
+	padding-top: 15px;
+}
+
+.showcase {
+	padding-left: 20px;
+	margin: auto;
+	overflow: auto;
+}
+
+.showcasepic {
+	width: 50%
+}
+
+.report {
+	margin: auto;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+.weather {
+	display: inline-block;
+	background-color: #eee;
+	padding: 18px;
+	border: 1px solid;
+	border-radius: 20px;
+	margin-left: 1.1%;
+	width: 20%;
+}
+
+.forecast {
+	margin: 0px;
+	font: sans-seriff;
+}
+
+.forecast>h1, .day-forecast {
+	margin: 0.5rem;
+	padding: 0.3rem;
+	font-size: 1.2rem;
+}
+
+.forecast>h2, .day-forecast {
+	margin: 2rem;
+	font-size: 1rem;
+}
+/*FOOTER*/
+
+/*FOOTER*/
+/* The footer is fixed to the bottom of the page */
+footer {
+	background-color: #c0c0c0;
+	height: 400px;
+	background-image: url("../Images/Footerbg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.footerSocial {
+	width: 33%;
+	float: left;
+	height: 45%;
+}
+
+.footerSocial:hover {
+	background-color: black;
+	opacity: 0.5;
+}
+
+.center {
+	width: 33%;
+	margin: auto;
+	padding-top: 20%;
+	padding-left: 19%;
+}
+
+.Copyright {
+	text-align: center;
+	color: white;
+	font-size: 0.9em;
+	display: block;
+}

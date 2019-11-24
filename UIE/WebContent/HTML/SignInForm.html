@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../CSS/SignIn.css">
+<meta charset="ISO-8859-1">
+<title>Online signin Form</title>
+</head>
+<body>
+	<!--  <script type="text/javascript">
+if(sessionStorage.hits){
+	sessionStorage.hits=Number(sessionStorage.hits)+1;	
+}
+else {
+	sessionStorage.hits=1;
+}
+document.write("Total Hits :" + sessionStorage.hits);
+</script>-->
+
+
+
+
+	<script type="text/javascript">
+if(localStorage.hits){
+	
+	localStorage.hits=Number(localStorage.hits)+1;	
+}
+else {
+	localStorage.hits=1;
+}
+document.write("Total Hits :" + localStorage.hits);
+</script>
+	<div class="box">
+		<h2>Login</h2>
+		<form novalidate>
+			<div class="inputBox">
+				<input type="text" placeholder="UseName" required autocomplete="on"
+					autofocus>
+			</div>
+			<div class="inputBox">
+				<input type="password" placeholder="Password" required
+					autocomplete="on" autofocus>
+			</div>
+			<div class="SubmitButton">
+				<input type="submit" value="Submit" onclick="displayMessage()">
+			</div>
+
+		</form>
+	</div>
+
+	<script type="text/javascript">
+function displayMessage() {
+	alert("Thanks for Signing in")
+	
+}
+</script>
+
+</body>
+</html>
